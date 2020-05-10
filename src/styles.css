@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.bgi {
+  /* The image used */
+  background-image: url("https://mdbootstrap.com/img/Photos/Others/img%20(42).jpg");
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fill-space {
+  flex: 1 1 auto;
+}
+
+.blue-snackbar {
+  background: rgba(114, 107, 133, 0.96);
+}
+
+.red-snackbar {
+  background: rgba(255, 21, 0, 0.96);
+}
+
+.position {
+  position: relative;
+}
+
+#labelName {
+  color: #00987e;
+}
+
+
+

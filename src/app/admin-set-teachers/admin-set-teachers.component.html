@@ -1,0 +1,15 @@
+<h1 mat-dialog-title>Create teacher</h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Candidates...</mat-label>
+    <mat-select [formControl]="teacherForm">
+      <mat-option *ngFor="let user of users" [value]="user">{{user.name}}</mat-option>
+    </mat-select>
+    <mat-error *ngIf="teacherForm.hasError('required')">Please choose any user</mat-error>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button type="submit" [disabled]="!teacherForm.valid" (click)="createTeacher(teacherForm)">Add</button>
+</div>
+

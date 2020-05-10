@@ -1,0 +1,14 @@
+<h1 mat-dialog-title>Review groups</h1>
+<div mat-dialog-content>
+  <mat-list>
+    <mat-list-item *ngFor="let group of groups">
+      <mat-icon matListIcon>fiber_manual_record</mat-icon>
+      <h3 matLine> {{group.name}} </h3>
+        <button mat-button type="submit" (click)="viewMembers(group.id, group.name)"><mat-icon>pageview</mat-icon></button>
+    </mat-list-item>
+  </mat-list>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+</div>
+

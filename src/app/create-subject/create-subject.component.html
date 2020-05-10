@@ -1,0 +1,19 @@
+<h1 mat-dialog-title>Create new subject</h1>
+<div mat-dialog-content>
+  <p id="labelName">Name</p>
+  <mat-form-field class="example-full-width">
+    <input matInput type="text" [(ngModel)]="newSubject.subjectName"
+           cdkFocusInitial>
+  </mat-form-field>
+  <p id="labelName">Teacher</p>
+  <mat-form-field>
+    <mat-select [(value)]="teacher">
+      <mat-option *ngFor="let option of teachers" [value]="option">{{ option.name }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button type="submit" (click)="createSubject(newSubject, teacher)">Add</button>
+</div>
+

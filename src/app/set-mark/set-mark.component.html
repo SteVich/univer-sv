@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>Change mark</h1>
+<div mat-dialog-content>
+  <mat-form-field class="example-full-width">
+    <input matInput type="text" [(ngModel)]="user.mark"
+           cdkFocusInitial>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button type="submit" (click)="updateMark(user)">Add</button>
+</div>
+
