@@ -5,7 +5,7 @@ import {Subject} from "./subject/subject";
 import {FormControl} from "@angular/forms";
 import {Group} from "./group/group";
 
-const apiUrl = 'https://git.heroku.com/univer-sv.git';
+const apiUrl = 'https://git.heroku.com/univer-sv-server.git';
 
 @Injectable({
   providedIn: 'root'

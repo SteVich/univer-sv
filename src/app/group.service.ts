@@ -4,7 +4,7 @@ import {Observable} from "rxjs";
 import {Group} from "./group/group";
 import {FormControl} from "@angular/forms";
 
-const apiUrl = 'https://git.heroku.com/univer-sv.git';
+const apiUrl = 'https://git.heroku.com/univer-sv-server.git';
 
 @Injectable({
   providedIn: 'root'
