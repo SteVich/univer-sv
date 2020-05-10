@@ -2,10 +2,9 @@ import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {FormControl} from "@angular/forms";
-import {Group} from "./group/group";
 import {Specialty} from "./admin-create-specialty/specialty";
 
-const apiUrl = 'http://localhost:4201/admin/';
+const apiUrl = 'https://git.heroku.com/univer-sv.git';
 
 @Injectable({
   providedIn: 'root'
