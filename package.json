@@ -30,7 +30,7 @@
     "@angular/cli": "~7.0.4",
     "@angular/compiler-cli": "~7.0.0",
     "typescript": "~3.1.1",
-    "express": "latest"
+    "express": "^4.17.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.10.0",
