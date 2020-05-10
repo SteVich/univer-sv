@@ -1,10 +1,10 @@
-import * as cors from 'cors';
 //Install express server
-const express = require('express');
+const cors = require('express');
+const express = require('cors');
 const path = require('path');
 
-const app = express()
-  .use(cors());
+const app = express();
+app.use(cors());
 
 // Serve only the static files form the dist directory
 app.use(express.static('./dist/univer-sv'));
